@@ -56,21 +56,46 @@ const revBasicCalRows = Object.keys(basicCalRows).reverse();
 
 
 <style scoped>
+#calc-container {
+margin: 10px 30px 10px 30px;
+border: 2px solid red;
+}
+
 #calc-btns {
 margin: auto;
+border: solid blueviolet;
 }
 
 #calc-btns table {
+    width: 100%;
+    min-width: 250px;
+    max-width: 400px;
     border-spacing: 10px;
+    border: 2px solid green;
+    margin:auto;
 }
 
-td {
-    border: 2px solid black;
-    width: 23%;
+.btn {
+    border-bottom: 4px solid rgb(73, 57, 57);
+    border-right: 4px solid rgb(157, 163, 170);
+    border-radius: 5px;
+    width: 24%;
     text-align: center;
     font-size: 1.5em;
-    background: gray;
+    background:rgb(172, 175, 177);
     user-select: none;
+    padding: 3px;
+    font-weight: light;
+    color:rgb(13, 13, 13);
+   
+
+    
 
 }
+
+.btn:active {
+    border: none;
+}
+
+
 </style>
